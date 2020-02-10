@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mario Maker Edit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="/er.png" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>MARIO MAKER</h1>
+    <p>Click on any block to use it.</p>
+    <p>Mario can jump 4 blocks vertically and 8 blocks horizontally.</p>
+    <p class = "m-0 palette">
+      <strong>Palette</strong><br>
+    </p>
+    <button class = "btn btn-block btn-success mb-1 prev">Preview Game</button>
+    <div class = "maker">
+    <!--
+      <div class = "mrow">
+        <button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button>
+      </div>
+      <div class = "mrow">
+        <button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button>
+      </div>
+      <div class = "mrow">
+        <button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button>
+      </div>
+      <div class = "mrow">
+        <button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button>
+      </div>
+      <div class = "mrow">
+        <button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button><button class = "mblock"></button>
+      </div>
+    -->
+    </div>
+    <div class = "btn-group w-100 mt-1">
+      <button class = "btn btn-primary art">+ row top</button>
+      <button class = "btn btn-primary arb">+ row bottom</button>
+    </div>
+    <div class = "btn-group w-100 mt-1">
+      <button class = "btn btn-warning acl">+ column left</button>
+      <button class = "btn btn-warning acr">+ column right</button>
+    </div>
+    <button class = "btn btn-danger btn-block mr-4 mt-1 ca">Clear all</button>
+    <button class = "btn btn-success btn-block mr-4 mt-1 mbc">Make bottom all currently selected</button>
+    <p class = "m-0 palette"></p>
+    <br><br>
+    <h2 class = "text-center">export</h2>
+    <button class = "copy btn btn-dark mt-1">Get level code!</button><br>
+    <code class = "level">[...]</code><br><br>
+    <button class = "getperm btn btn-secondary">Get permalink</button><br>
+    <a href="#" class="permalink">https://mario-maker-edit.9sanmarcokids.repl.co?l=...</a><br>
+    <code class="perma selectall">https://mario-maker-edit.9sanmarcokids.repl.co?l=...</code>
+    <button class = "close btn btn-danger">&#x1F7AE;</button>
+    <h2 class = "text-center">blocks</h2>
+    <table class = "blocks">
+      <tr>
+        <th>Block</th>
+        <th>Description</th>
+      </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src = "levels.js"></script>
+    <script src = "hammer.js"></script>
+    <script src = "game.js"></script>  
+    <script src = "script.js"></script>
+    <script src = "permalink.js"></script>
+  </body>
+</html>
